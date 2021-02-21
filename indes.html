@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Times Table</title>
+        <meta charset="UTF-8">
+        <meta name="description" content="times Table Generator">
+        <meta name="author" content="SIGHT-INNOVATION">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link type="text/css" rel="stylesheet" href="Css/si_css.css">
+        <link type="text/css" rel="stylesheet" href="Css/modalCss.css">
+        <style>
+            body{
+                overflow: hidden;
+            }
+            .locationCon{
+                padding: 20px;
+                margin-top: 20px;
+            }
+            .location{
+               
+                padding:20px 20px;
+                border:1px solid grey;
+                border-radius: 10px;
+            }
+             table {
+                width: 100%;
+              
+            }
+            table,tr,th,td{
+                 border-collapse: collapse;
+            }
+            
+            table tr td,table tr th{
+                padding:10px;
+                width: 100px;
+                text-align: center;
+                
+            }
+           
+            .tBold{
+                font-weight: bold;
+            }
+            .tBold2{
+                font-weight: bold;
+                font-size: 18px;
+            }
+            .headHr{
+                transform: rotateZ(20deg);
+            }
+           
+        </style>
+    </head>
+    <body>
+       <div class="col-12">
+            <div class="genDiv2 col-12">
+                <span class="genBtn" onclick="showModal5('#tableInp')">Generate Table</span>
+            </div>
+            <div class="locationCon col-12">
+                <div class="location col-12 whiteBack" contenteditable="true"></div>
+            </div>
+       </div> 
+        
+        <div class="modal5" id="tableModal">
+            <div class="modal-content5" id="tableInp">
+                <div class="closeDiv5 col-12">
+                    <span class="close" onclick="closeSpan5()">&times;</span>
+                </div>
+                <div class="tableInp">
+                    <p class="tablePara" >TIME TABLE PARAMETERS</p>
+                    <div class="genDiv1">
+                        <span class="genSpan">Starting Time&nbsp;<sup class="red">*</sup></span><br><input class="genInput modalInput5" type="time"><br>
+                        <span class="genSpan">Minutes Per Period&nbsp;<sup class="red">*</sup></span><br><input class="genInput modalInput5" placeholder="Enter minutes" type="number" min="1" max="120"><br>
+                        <span class="genSpan">Total No of Periods&nbsp;<sup class="red">*</sup></span><br><input class="genInput modalInput5" placeholder="E.g 8" type="number"><br>
+                        <span class="genSpan">No of Days&nbsp;<sup class="red">*</sup></span><br><input class="genInput modalInput5" placeholder="E.g 5" type="number" max='7' min="1"><br>
+                        <span class="genSpan">No of Breaks</span><br><input class="genInput modalInput5" type="number" placeholder="Total number of breaks" min="0" max="3"><br>
+                        <div class=" breDiv">
+                            <div class="bre">
+                                <span class="genSpan">First break occurs after Period</span><br><input class="breInput modalInput5" type="number" min="1" max="120"><br>
+                                <span class="genSpan">Minutes for break</span><br><input class="breInput2 bInput modalInput5" placeholder="Enter Minutes" type="number" min="1">
+                            </div>
+                            <div class="bre">
+                                <span class="genSpan">Second break occurs after Period</span><br><input class="breInput modalInput5" type="number" min="1" max="120"><br>
+                                <span class="genSpan">Minutes for break</span><br><input class="breInput2 bInput modalInput5" placeholder="Enter Minutes" type="number" min="1">
+                            </div>
+                            <div class="bre">
+                                <span class="genSpan">Third break occurs after Period</span><br><input class="breInput modalInput5" type="number" min="1" max="120"><br>
+                                <span class="genSpan">Minutes for break</span><br><input class="breInput2 bInput modalInput5" placeholder="Enter Minutes" type="number" min="1">
+                            </div>
+                            <br><br>
+                            <div class="moveDiv">
+                                <span class="moveBtn" onclick="genTable()">Generate</span>
+                            </div>
+                            
+                        </div>
+                    </div>
+
+                </div>
+            </div>    
+        </div>
+        
+
+
+        <script src="Scripts/si_script.js"></script>
+    </body>
+</html>

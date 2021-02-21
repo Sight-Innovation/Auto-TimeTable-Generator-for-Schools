@@ -1,0 +1,122 @@
+/* The Modal (background) */
+.modal5 {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 5%; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4) !important; /* Black w/ opacity */
+  
+}
+@media only screen and (max-width: 991px){
+    .modal5{
+        width:100%;
+        left:0;
+    }
+}
+/* Modal Content */
+.modal-content5 {
+  position: relative;
+  background-color: #fefefe;
+  margin: auto;
+   padding: 2px 16px;
+   padding-bottom: 20px;
+  border: 1px solid #888;
+  width: 30%;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+  -webkit-animation-name: animatetop;
+  -webkit-animation-duration: 0.4s;
+  animation-name: animatetop;
+  animation-duration: 0.4s
+}
+@media only screen and (min-width:768px) and (max-width:1100px){
+    .modal-content5{
+        width: 45%;
+    }
+}
+@media only screen and (max-width:767px){
+    .modal-content5{
+        width:80%;
+    }
+}
+#modalCon1, #modalCon2,.modal-content5{
+    display: none;
+}
+.closeDiv5 > .close{
+    float: right;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    color:#811eb8;
+}
+.modalInput5{
+    width: 100%;
+    border-radius: 5px;
+    font-size: 15px;
+    padding:5px;
+}
+.moveDiv{
+    padding-bottom:20px;
+}
+.moveBtn{
+    font-size: 15px;
+    border-radius: 5px;
+    
+    background-color: #811eb8;
+    color:white;
+    padding:10px 20px;
+    cursor: pointer;
+}
+.toSpan,.fromSpan{
+    width:170px;
+    display:inline-block;
+}
+.genDiv1{
+    margin-top: 5px;
+    padding:10px;
+}
+.genSpan{
+    width: 250px;
+    display: inline-block;
+    font-size: 15px;
+    padding:5px; 
+}
+.genInput,.breInput,.breInput2{
+    font-size: 15px;
+    border-radius: 5px;
+}
+.genDiv2{
+    text-align:center ;
+    margin-top: 20px;
+}
+.genBtn{
+    padding:10px 20px;
+    color:white;
+    background-color: #811eba;
+    border-radius: 5px;
+    cursor: pointer;
+}
+ .bre{
+    display: none;
+}
+.red{
+    color:red !important;
+}
+.tablePara{
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+    color:#41aeb5;
+    margin-bottom: 0;
+  
+}
+@media only screen and (max-width:379px){
+    .tablePara{
+        font-size: 14px;
+    }
+}
